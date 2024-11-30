@@ -1,3 +1,6 @@
+import { icon } from "@fortawesome/fontawesome-svg-core";
+import selenium from '../assets/selenium.png'
+
 import {
   mobile,
   backend,
@@ -23,6 +26,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  selenium,
+  mysql
 } from "../assets";
 
 export const navLinks = [
@@ -73,17 +78,10 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+ 
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -96,22 +94,20 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+ 
   {
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
+  
   {
     name: "docker",
     icon: docker,
   },
+  {
+    name: "Selenium",
+    icon: selenium,
+  }
 ];
 
 const experiences = [

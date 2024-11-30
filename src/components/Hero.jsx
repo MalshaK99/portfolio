@@ -7,7 +7,7 @@ import {
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import myimage from "../assets/malshaa.jpg";
-
+import Works from "./Works";
 const phrases = [
   "Full Stack Developer",
   "Software Engineer",
@@ -81,7 +81,6 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            // transition={{ delay: 0.5, duration: 0.8 }}
             whileHover={{
               scale: 1.1, // Slightly increase the size on hover
               backgroundColor: "rgba(72, 187, 120, 1)", // Change to a darker green
@@ -162,6 +161,25 @@ const Hero = () => {
             className="relative w-[360px] h-[360px] object-cover rounded-full shadow-lg"
           />
         </motion.div>
+
+        {/* Scroll Down Button */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex justify-center items-center">
+          <a href="#Work">
+            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-green-500 flex justify-center items-start p-2">
+              <motion.div
+                animate={{
+                  y: [0, 24, 0],
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+                className="w-3 h-3 rounded-full bg-green-500 mb-1"
+              />
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   );
