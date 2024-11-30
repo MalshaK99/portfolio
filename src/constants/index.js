@@ -1,6 +1,4 @@
 import { icon } from "@fortawesome/fontawesome-svg-core";
-import selenium from '../assets/selenium.png'
-
 import {
   mobile,
   backend,
@@ -27,7 +25,10 @@ import {
   tripguide,
   threejs,
   selenium,
-  mysql
+  mysql,
+  php,
+  python,
+  java
 } from "../assets";
 
 export const navLinks = [
@@ -105,8 +106,19 @@ const technologies = [
     icon: docker,
   },
   {
-    name: "Selenium",
-    icon: selenium,
+    name: "mysql",
+    icon: mysql,
+  },
+  {
+    name: "php",
+    icon: php,
+  },
+  {
+    name: "python",
+    icon: python,
+  },{
+    name: "java",
+    icon: java,
   }
 ];
 
@@ -194,9 +206,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "CookBookie",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    "Web-based recipe sharing platform provides users with a convenient and efficient solution for all their recipe needs. Users can easily search for recipes, publish their own, and manage profile details, including changing passwords, updating personal information, and uploading a profile picture. The platform also allows users to edit and delete their published recipes, as well as view previously shared recipes. With these features, CookBookie is designed to foster a community of cooking enthusiasts who can share and explore delicious recipes."  , 
     tags: [
       {
         name: "react",
@@ -207,54 +219,52 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "node.js",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/MalshaK99/CookBookie_backend",
+    source_code_link1: "https://github.com/MalshaK99/CookBookie_frontend",
+
   },
   {
-    name: "Job IT",
+    name: "Vestario",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Vestario is an innovative web application designed to enhance the online shopping experience for clothing enthusiasts. With a user-friendly interface, Vestario allows customers to browse a diverse selection of clothing items, view detailed product information, and easily add their favorite products to their cart. The platform offers convenient filtering options to help users find the perfect pieces based on their preferences. Whether shopping for everyday wear or special occasions, Vestario aims to provide a seamless and enjoyable shopping experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
+     
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
+        name: "php",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/MalshaK99/vestario",
   },
   {
-    name: "Trip Guide",
+    name: "GearWise",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
+   "Automotive CRM System is a powerful web application developed to streamline operations at vehicle service centers. This system automates key processes such as customer management, appointment scheduling, service tracking, and invoicing, enabling service providers to enhance efficiency and improve customer satisfaction. Users can easily manage customer details, view service history, and send reminders for upcoming appointments or maintenance needs. With its intuitive interface and robust functionality, the Automotive CRM System provides service center operators with the tools they need to optimize their workflows and deliver exceptional service to their clients.",    tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "node.js",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/MalshaK99/GearWise-back_end",
   },
 ];
 
