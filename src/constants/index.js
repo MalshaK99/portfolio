@@ -290,8 +290,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/MalshaK99/CookBookie_backend",
-    source_code_link1: "https://github.com/MalshaK99/CookBookie_frontend",
+    source_code_link: "https://github.com/MalshaK99/Expense-Manager",
 
   },
 

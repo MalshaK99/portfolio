@@ -7,6 +7,7 @@ import {
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import myimage from "../assets/malshaa.jpg";
+
 import cv from '../assets/cv.pdf'
 import Works from "./Works";
 const phrases = [
@@ -59,9 +60,9 @@ const Hero = () => {
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
             Malsha Karunarathna
           </h1>
-          <h2 className="text-2xl font-light text-purple-400 mb-6">
+          <h2 className="text-2xl font-light text-teal-600 mb-6">
             I'm a{" "}
-            <span className="font-bold text-purple-400 relative inline-block">
+            <span className="font-bold text-teal-600 relative inline-block">
               {currentPhrase}
               <span className="absolute -right-2 top-0 text-white text-3xl animate-blink">|</span>            </span>
           </h2>
@@ -76,7 +77,7 @@ const Hero = () => {
           <motion.a  
   href={cv}  
   download="Malsha_Karunarathna_Resume.pdf"  
-  className="inline-block px-6 py-3 bg-purple-500 text-black font-semibold rounded-md shadow transition"  
+  className="inline-block px-6 py-3 bg-teal-500 text-black font-semibold rounded-md shadow transition"  
   initial={{ opacity: 0 }}  
   animate={{ opacity: 1 }}  
   transition={{ type: "spring", stiffness: 400, damping: 10 }}  
@@ -97,7 +98,7 @@ const Hero = () => {
               href="https://github.com/MalshaK99"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 border-2 border-purple-500 text-purple-500 rounded-full hover:bg-black-900 hover:text-white transition"
+              className="p-3 border-2 border-teal-500 text-teal-500 rounded-full hover:bg-teal-800 hover:text-white transition"
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>
@@ -105,7 +106,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/malsha-karunarathna-350782228/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 border-2 border-purple-500 text-purple-500 rounded-full hover:bg-purple-900 hover:text-white transition"
+              className="p-3 border-2 border-teal-500 text-teal-500 rounded-full hover:bg-teal-800 hover:text-white transition"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -113,7 +114,7 @@ const Hero = () => {
               href="https://instagram.com/your-profile"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 border-2 border-purple-500 text-purple-500 rounded-full hover:bg-purple-900 hover:text-white transition"
+              className="p-3 border-2 border-teal-500 text-teal-500 rounded-full hover:bg-teal-9800 hover:text-white transition"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
@@ -139,7 +140,7 @@ const Hero = () => {
               cy="200"
               r="190"
               fill="none"
-              stroke="rgba(147, 112, 219, 0.9)" // Green stroke color
+              stroke="rgb(34, 151, 153)" // Green stroke color
               strokeWidth="4"
               strokeLinecap="round"
               initial={{ pathLength: 0 }}
