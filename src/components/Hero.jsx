@@ -7,6 +7,7 @@ import {
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import myimage from "../assets/malshaa.jpg";
+import cv from '../assets/cv.pdf'
 import Works from "./Works";
 const phrases = [
   "Full Stack Developer",
@@ -73,7 +74,7 @@ const Hero = () => {
             skills to a dynamic team and help bring innovative ideas to life.
           </p>
           <motion.a  
-  href="./assets/cv.pdf"  
+  href={cv}  
   download="Malsha_Karunarathna_Resume.pdf"  
   className="inline-block px-6 py-3 bg-purple-500 text-black font-semibold rounded-md shadow transition"  
   initial={{ opacity: 0 }}  

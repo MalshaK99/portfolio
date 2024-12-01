@@ -233,9 +233,14 @@ const projects = [
     description:
       "Vestario is an innovative web application designed to enhance the online shopping experience for clothing enthusiasts. With a user-friendly interface, Vestario allows customers to browse a diverse selection of clothing items, view detailed product information, and easily add their favorite products to their cart. The platform offers convenient filtering options to help users find the perfect pieces based on their preferences. Whether shopping for everyday wear or special occasions, Vestario aims to provide a seamless and enjoyable shopping experience.",
     tags: [
+     
       {
         name: "react",
         color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
       },
      
       {
@@ -266,6 +271,30 @@ const projects = [
     image: tripguide,
     source_code_link: "https://github.com/MalshaK99/GearWise-back_end",
   },
+  {
+    name: "Expense Manager",
+    description:
+    "Web-based recipe sharing platform provides users with a convenient and efficient solution for all their recipe needs. Users can easily search for recipes, publish their own, and manage profile details, including changing passwords, updating personal information, and uploading a profile picture. The platform also allows users to edit and delete their published recipes, as well as view previously shared recipes. With these features, CookBookie is designed to foster a community of cooking enthusiasts who can share and explore delicious recipes."  , 
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "django",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/MalshaK99/CookBookie_backend",
+    source_code_link1: "https://github.com/MalshaK99/CookBookie_frontend",
+
+  },
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };
