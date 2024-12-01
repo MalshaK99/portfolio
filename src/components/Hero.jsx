@@ -7,9 +7,8 @@ import {
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import myimage from "../assets/malshaa.jpg";
+import cv from "../assets/cv.pdf";
 
-import cv from '../assets/cv.pdf'
-import Works from "./Works";
 const phrases = [
   "Full Stack Developer",
   "Software Engineer",
@@ -53,47 +52,49 @@ const Hero = () => {
   }, [typingPosition, isDeleting, phraseIndex]);
 
   return (
-    <section className="relative w-full h-screen text-white flex items-center justify-center">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <section className="relative w-full min-h-screen text-white  flex items-center justify-center">
+      <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Section */}
-        <div>
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
-            Malsha Karunarathna
-          </h1>
-          <h2 className="text-2xl font-light text-teal-600 mb-6">
+        <div className="text-center md:text-left">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight bg-gradient-to-r from-teal-300 via-teal-100 to-white-100 bg-clip-text text-transparent">
+  Malsha Karunarathna
+</h1>
+
+          <h2 className="text-lg sm:text-xl md:text-2xl font-light text-teal-600 mb-6">
             I'm a{" "}
             <span className="font-bold text-teal-600 relative inline-block">
               {currentPhrase}
-              <span className="absolute -right-2 top-0 text-white text-3xl animate-blink">|</span>            </span>
+              <span className="absolute -right-2 top-0 text-white text-3xl animate-blink">
+                |
+              </span>
+            </span>
           </h2>
-
-          <p className="text-gray-400 mb-8 leading-relaxed">
-            I am a motivated software developer seeking an internship
+          <p className="text-gray-400 mb-8 leading-relaxed text-sm sm:text-base md:text-lg">
+            I am an undergraduate of Uva Wellassa University seeking an internship
             opportunity in full-stack development. I excel at collaborating
             closely with clients to create efficient and user-friendly solutions
             that address real-world challenges. I'm eager to contribute my
             skills to a dynamic team and help bring innovative ideas to life.
           </p>
-          <motion.a  
-  href={cv}  
-  download="Malsha_Karunarathna_Resume.pdf"  
-  className="inline-block px-6 py-3 bg-teal-500 text-black font-semibold rounded-md shadow transition"  
-  initial={{ opacity: 0 }}  
-  animate={{ opacity: 1 }}  
-  transition={{ type: "spring", stiffness: 400, damping: 10 }}  
-  whileHover={{  
-    scale: 1.1, // Slightly increase the size on hover  
-    backgroundColor: "rgba(147, 112, 219, 1)", // Change to a lighter purple  
-  }}  
-  whileTap={{  
-    scale: 0.95, // Slightly decrease the size on tap  
-    backgroundColor: "rgba(102, 51, 153, 1)", // Change to a darker purple (Rebecca Purple)  
-  }}  
->  
-  Download CV  
-</motion.a>
-
-          <div className="flex gap-4 mt-6">
+          <motion.a
+            href={cv}
+            download="Malsha_Karunarathna_Resume.pdf"
+            className="inline-block px-6 py-3 bg-teal-500 text-black font-semibold rounded-md shadow transition"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            whileHover={{
+              scale: 1.1,
+              backgroundColor: "rgba(0, 128, 128, 1)",
+            }}
+            whileTap={{
+              scale: 0.95,
+              backgroundColor: "rgba(0, 77, 64, 1)",
+            }}
+          >
+            Download CV
+          </motion.a>
+          <div className="flex gap-4 mt-6 justify-center md:justify-start">
             <a
               href="https://github.com/MalshaK99"
               target="_blank"
@@ -114,15 +115,15 @@ const Hero = () => {
               href="https://instagram.com/your-profile"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 border-2 border-teal-500 text-teal-500 rounded-full hover:bg-teal-9800 hover:text-white transition"
+              className="p-3 border-2 border-teal-500 text-teal-500 rounded-full hover:bg-teal-800 hover:text-white transition"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
           </div>
         </div>
 
-        {/* Right Section */}
-        <motion.div
+            {/* Right Section */}
+            <motion.div
           className="relative flex justify-center items-center"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -130,29 +131,39 @@ const Hero = () => {
         >
           {/* Orbiting Circular Frame */}
           <svg
-            width="400"
-            height="400"
-            viewBox="0 0 400 400"
-            className="absolute"
-          >
-            <motion.circle
-              cx="200"
-              cy="200"
-              r="190"
-              fill="none"
-              stroke="rgb(34, 151, 153)" // Green stroke color
-              strokeWidth="4"
-              strokeLinecap="round"
-              initial={{ pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-              transition={{
-                repeat: Infinity,
-                duration: 4, // Time to complete one clockwise loop
-                ease: "linear",
-                times: [0, 0.5, 1], // Timing for fading effect
-              }}
-            />
-          </svg>
+  width="400"
+  height="400"
+  viewBox="0 0 400 400"
+  className="absolute"
+>
+  {/* Gradient Definition */}
+  <defs>
+  <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#CCFBF1" /> {/* teal-100 */}
+      <stop offset="100%" stopColor="#065D69" /> {/* teal-800 */}
+    </linearGradient>
+  </defs>
+
+  {/* Circle with Gradient Stroke */}
+  <motion.circle
+    cx="200"
+    cy="200"
+    r="190"
+    fill="none"
+    stroke="url(#circleGradient)" // Reference the gradient correctly
+    strokeWidth="4"
+    strokeLinecap="round"
+    initial={{ pathLength: 0 }}
+    animate={{ pathLength: 1 }}
+    transition={{
+      repeat: Infinity,
+      duration: 4, // Time to complete one clockwise loop
+      ease: "linear",
+      times: [0, 0.5, 1], // Timing for fading effect
+    }}
+  />
+</svg>
+
 
           {/* Image */}
           <img
@@ -163,9 +174,9 @@ const Hero = () => {
         </motion.div>
 
         {/* Scroll Down Button */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex justify-center items-center">
-          <a href="#Work">
-            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-purple-500 flex justify-center items-start p-2">
+        {/* <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex justify-center items-center">
+          <a href="#Works">
+            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-teal-500 flex justify-center items-start p-2">
               <motion.div
                 animate={{
                   y: [0, 24, 0],
@@ -175,14 +186,15 @@ const Hero = () => {
                   repeat: Infinity,
                   repeatType: "loop",
                 }}
-                className="w-3 h-3 rounded-full bg-purple-500 mb-1"
+                className="w-3 h-3 rounded-full bg-teal-500 mb-1"
               />
             </div>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
 };
+
 
 export default Hero;
