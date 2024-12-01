@@ -51,19 +51,18 @@ const Hero = () => {
   }, [typingPosition, isDeleting, phraseIndex]);
 
   return (
-    <section className="relative w-full h-screen bg-[#111827] text-white flex items-center justify-center">
+    <section className="relative w-full h-screen text-white flex items-center justify-center">
       <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Section */}
         <div>
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
             Malsha Karunarathna
           </h1>
-          <h2 className="text-2xl font-light text-green-400 mb-6">
+          <h2 className="text-2xl font-light text-purple-400 mb-6">
             I'm a{" "}
-            <span className="font-bold text-green-400 relative inline-block">
+            <span className="font-bold text-purple-400 relative inline-block">
               {currentPhrase}
-              <span className="absolute -right-2 top-0 animate-blink">|</span>
-            </span>
+              <span className="absolute -right-2 top-0 text-white text-3xl animate-blink">|</span>            </span>
           </h2>
 
           <p className="text-gray-400 mb-8 leading-relaxed">
@@ -73,32 +72,31 @@ const Hero = () => {
             that address real-world challenges. I'm eager to contribute my
             skills to a dynamic team and help bring innovative ideas to life.
           </p>
-
-          <motion.a
-            href="./assets/cv.pdf"
-            download="Malsha_Karunarathna_Resume.pdf"
-            className="inline-block px-6 py-3 bg-green-500 text-black font-semibold rounded-md shadow transition"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            whileHover={{
-              scale: 1.1, // Slightly increase the size on hover
-              backgroundColor: "rgba(72, 187, 120, 1)", // Change to a darker green
-            }}
-            whileTap={{
-              scale: 0.95, // Slightly decrease the size on tap
-              backgroundColor: "rgba(34, 139, 76, 1)", // Change to an even darker green
-            }}
-          >
-            Download CV
-          </motion.a>
+          <motion.a  
+  href="./assets/cv.pdf"  
+  download="Malsha_Karunarathna_Resume.pdf"  
+  className="inline-block px-6 py-3 bg-purple-500 text-black font-semibold rounded-md shadow transition"  
+  initial={{ opacity: 0 }}  
+  animate={{ opacity: 1 }}  
+  transition={{ type: "spring", stiffness: 400, damping: 10 }}  
+  whileHover={{  
+    scale: 1.1, // Slightly increase the size on hover  
+    backgroundColor: "rgba(147, 112, 219, 1)", // Change to a lighter purple  
+  }}  
+  whileTap={{  
+    scale: 0.95, // Slightly decrease the size on tap  
+    backgroundColor: "rgba(102, 51, 153, 1)", // Change to a darker purple (Rebecca Purple)  
+  }}  
+>  
+  Download CV  
+</motion.a>
 
           <div className="flex gap-4 mt-6">
             <a
               href="https://github.com/MalshaK99"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 border-2 border-green-500 text-green-500 rounded-full hover:bg-black-900 hover:text-white transition"
+              className="p-3 border-2 border-purple-500 text-purple-500 rounded-full hover:bg-black-900 hover:text-white transition"
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>
@@ -106,7 +104,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/malsha-karunarathna-350782228/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 border-2 border-green-500 text-green-500 rounded-full hover:bg-green-900 hover:text-white transition"
+              className="p-3 border-2 border-purple-500 text-purple-500 rounded-full hover:bg-purple-900 hover:text-white transition"
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
@@ -114,7 +112,7 @@ const Hero = () => {
               href="https://instagram.com/your-profile"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 border-2 border-green-500 text-green-500 rounded-full hover:bg-green-900 hover:text-white transition"
+              className="p-3 border-2 border-purple-500 text-purple-500 rounded-full hover:bg-purple-900 hover:text-white transition"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
@@ -140,7 +138,7 @@ const Hero = () => {
               cy="200"
               r="190"
               fill="none"
-              stroke="rgba(72, 187, 120, 0.9)" // Green stroke color
+              stroke="rgba(147, 112, 219, 0.9)" // Green stroke color
               strokeWidth="4"
               strokeLinecap="round"
               initial={{ pathLength: 0 }}
@@ -165,7 +163,7 @@ const Hero = () => {
         {/* Scroll Down Button */}
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex justify-center items-center">
           <a href="#Work">
-            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-green-500 flex justify-center items-start p-2">
+            <div className="w-[35px] h-[64px] rounded-3xl border-4 border-purple-500 flex justify-center items-start p-2">
               <motion.div
                 animate={{
                   y: [0, 24, 0],
@@ -175,7 +173,7 @@ const Hero = () => {
                   repeat: Infinity,
                   repeatType: "loop",
                 }}
-                className="w-3 h-3 rounded-full bg-green-500 mb-1"
+                className="w-3 h-3 rounded-full bg-purple-500 mb-1"
               />
             </div>
           </a>
