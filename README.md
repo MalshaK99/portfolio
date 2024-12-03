@@ -152,6 +152,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  youtube
 } from "../assets";
 
 export const navLinks = [

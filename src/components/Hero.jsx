@@ -57,8 +57,8 @@ const Hero = () => {
         {/* Left Section */}
         <div className="text-center md:text-left">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight bg-gradient-to-r from-teal-300 via-teal-100 to-white-100 bg-clip-text text-transparent">
-  Malsha Karunarathna
-</h1>
+            Malsha Karunarathna
+          </h1>
 
           <h2 className="text-lg sm:text-xl md:text-2xl font-light text-teal-600 mb-6">
             I'm a{" "}
@@ -70,11 +70,12 @@ const Hero = () => {
             </span>
           </h2>
           <p className="text-gray-400 mb-8 leading-relaxed text-sm sm:text-base md:text-lg">
-            I am an undergraduate of Uva Wellassa University seeking an internship
-            opportunity in full-stack development. I excel at collaborating
-            closely with clients to create efficient and user-friendly solutions
-            that address real-world challenges. I'm eager to contribute my
-            skills to a dynamic team and help bring innovative ideas to life.
+            I am an ambitious and driven individual seeking internship
+            opportunities to apply and expand my skills in Software Engineering.
+            With hands-on experience in building innovative projects, I am
+            passionate about solving real-world problems through technology. I
+            am eager to learn and grow in a collaborative and dynamic work
+            environment.
           </p>
           <motion.a
             href={cv}
@@ -122,8 +123,8 @@ const Hero = () => {
           </div>
         </div>
 
-            {/* Right Section */}
-            <motion.div
+        {/* Right Section */}
+        <motion.div
           className="relative flex justify-center items-center"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -131,39 +132,44 @@ const Hero = () => {
         >
           {/* Orbiting Circular Frame */}
           <svg
-  width="400"
-  height="400"
-  viewBox="0 0 400 400"
-  className="absolute"
->
-  {/* Gradient Definition */}
-  <defs>
-  <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#CCFBF1" /> {/* teal-100 */}
-      <stop offset="100%" stopColor="#065D69" /> {/* teal-800 */}
-    </linearGradient>
-  </defs>
+            width="400"
+            height="400"
+            viewBox="0 0 400 400"
+            className="absolute"
+          >
+            {/* Gradient Definition */}
+            <defs>
+              <linearGradient
+                id="circleGradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" stopColor="#CCFBF1" /> {/* teal-100 */}
+                <stop offset="100%" stopColor="#065D69" /> {/* teal-800 */}
+              </linearGradient>
+            </defs>
 
-  {/* Circle with Gradient Stroke */}
-  <motion.circle
-    cx="200"
-    cy="200"
-    r="190"
-    fill="none"
-    stroke="url(#circleGradient)" // Reference the gradient correctly
-    strokeWidth="4"
-    strokeLinecap="round"
-    initial={{ pathLength: 0 }}
-    animate={{ pathLength: 1 }}
-    transition={{
-      repeat: Infinity,
-      duration: 4, // Time to complete one clockwise loop
-      ease: "linear",
-      times: [0, 0.5, 1], // Timing for fading effect
-    }}
-  />
-</svg>
-
+            {/* Circle with Gradient Stroke */}
+            <motion.circle
+              cx="200"
+              cy="200"
+              r="190"
+              fill="none"
+              stroke="url(#circleGradient)" // Reference the gradient correctly
+              strokeWidth="4"
+              strokeLinecap="round"
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+              transition={{
+                repeat: Infinity,
+                duration: 4, // Time to complete one clockwise loop
+                ease: "linear",
+                times: [0, 0.5, 1], // Timing for fading effect
+              }}
+            />
+          </svg>
 
           {/* Image */}
           <img
@@ -195,6 +201,5 @@ const Hero = () => {
     </section>
   );
 };
-
 
 export default Hero;

@@ -220,7 +220,7 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/MalshaK99/CookBookie_backend",
-    source_code_link1: "https://github.com/MalshaK99/CookBookie_frontend",
+    //youtube_link: "https://github.com/MalshaK99/CookBookie_frontend",
 
   },
   {
@@ -245,6 +245,8 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/MalshaK99/vestario",
+      //youtube_link: "https://youtu.be/61jWsZpppaU", 
+
   },
   {
     name: "GearWise",
@@ -265,6 +267,7 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/MalshaK99/GearWise-back_end",
+   youtube_link: "https://youtu.be/ovFegqVDX9w?si=MQXzz1T9rVH96l0S"
   },
   {
     name: "Expense Manager",
@@ -286,6 +289,7 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/MalshaK99/Expense-Manager",
+    youtube_link: "https://www.youtube.com/watch?v=zAy1fCp6AZA&feature=youtu.be"
 
   },
 
