@@ -34,7 +34,9 @@ import php from './tech/php.jpeg'
 import python from './tech/python.jpeg'
 import java from './tech/java.jpeg'
 import cookbookie from '../assets/CookBookie.png'
-import vestario from '../assets/vestario.png'
+import vestario from '../assets/vestarioo.png'
+import gearwise from '../assets/gearwise.png'
+import expense from '../assets/expense.png'
 export {
   logo,
   backend,
@@ -72,4 +74,6 @@ export {
   youtube,
   cookbookie,
   vestario,
+  gearwise,
+  expense
 };

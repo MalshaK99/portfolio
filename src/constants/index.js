@@ -29,7 +29,10 @@ import {
   php,
   python,
   java,
-  cookbookie
+  cookbookie,
+  vestario,
+  gearwise,
+  expense
 } from "../assets";
 
 export const navLinks = [
@@ -218,6 +221,10 @@ const projects = [
         name: "node.js",
         color: "pink-text-gradient",
       },
+      {
+        name: "Selenium",
+        color: "blue-text-gradient"
+      }
     ],
     image: cookbookie,
     source_code_link: "https://github.com/MalshaK99/CookBookie_backend",
@@ -266,14 +273,14 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: gearwise,
     source_code_link: "https://github.com/MalshaK99/GearWise-back_end",
    youtube_link: "https://youtu.be/ovFegqVDX9w?si=MQXzz1T9rVH96l0S"
   },
   {
     name: "Expense Manager",
     description:
-    "Web-based recipe sharing platform provides users with a convenient and efficient solution for all their recipe needs. Users can easily search for recipes, publish their own, and manage profile details, including changing passwords, updating personal information, and uploading a profile picture. The platform also allows users to edit and delete their published recipes, as well as view previously shared recipes. With these features, CookBookie is designed to foster a community of cooking enthusiasts who can share and explore delicious recipes."  , 
+    "The Expense Manager is an intuitive web application designed to help users effectively track and manage their personal finances. With a simple and user-friendly interface, users can easily input and categorize their expenses, set monthly budgets, and monitor their spending habits. The application features comprehensive visual reports and charts that provide insights into financial trends over time, enabling users to make informed decisions about their spending. Whether you're looking to save money, plan for future expenses, or simply gain better control over your finances, the Expense Manager is your go-to tool for maintaining financial health.",
     tags: [
       {
         name: "react",
@@ -288,7 +295,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: expense,
     source_code_link: "https://github.com/MalshaK99/Expense-Manager",
     youtube_link: "https://www.youtube.com/watch?v=zAy1fCp6AZA&feature=youtu.be"
 
