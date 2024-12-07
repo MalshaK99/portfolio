@@ -33,7 +33,8 @@ import mysql from './tech/mysql.png'
 import php from './tech/php.jpeg'
 import python from './tech/python.jpeg'
 import java from './tech/java.jpeg'
-
+import cookbookie from '../assets/CookBookie.png'
+import vestario from '../assets/vestario.png'
 export {
   logo,
   backend,
@@ -68,5 +69,7 @@ export {
   python,
   php,
   java,
-  youtube
+  youtube,
+  cookbookie,
+  vestario,
 };

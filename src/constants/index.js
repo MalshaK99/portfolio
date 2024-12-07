@@ -28,7 +28,8 @@ import {
   mysql,
   php,
   python,
-  java
+  java,
+  cookbookie
 } from "../assets";
 
 export const navLinks = [
@@ -218,7 +219,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: cookbookie,
     source_code_link: "https://github.com/MalshaK99/CookBookie_backend",
     //youtube_link: "https://github.com/MalshaK99/CookBookie_frontend",
 
@@ -243,7 +244,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: vestario,
     source_code_link: "https://github.com/MalshaK99/vestario",
       //youtube_link: "https://youtu.be/61jWsZpppaU", 
 
