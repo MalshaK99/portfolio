@@ -6,7 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import myimage from "../assets/malshaa.jpg";
+import myimage from "../assets/malshaa.webp";
 import cv from "../assets/cv.pdf";
 
 const phrases = [
