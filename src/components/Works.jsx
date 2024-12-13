@@ -5,7 +5,11 @@ import { styles } from "../styles";
 import { github, youtube } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+
+const fadeInVariant = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const ProjectCard = ({
   index,
@@ -17,7 +21,13 @@ const ProjectCard = ({
   youtube_link,
 }) => {
   return (
-    <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
+    <motion.div
+      variants={fadeInVariant}
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.5, delay: index * 0.2 }}
+      className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+    >
       <div className="relative w-full h-[230px]">
         <img
           src={image}
@@ -65,21 +75,29 @@ const ProjectCard = ({
           </p>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
 const Works = () => {
   return (
-    <section id="work"> {/* Add an id to the section */}
-      <motion.div variants={textVariant()}>
+    <section id="work">
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={fadeInVariant}
+        transition={{ duration: 0.5 }}
+      >
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariant}
+          transition={{ duration: 0.5, delay: 0.1 }}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcase my skills and experience through
