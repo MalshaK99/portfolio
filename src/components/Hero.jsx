@@ -112,14 +112,14 @@ const Hero = () => {
             >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a
+            {/* <a
               href="https://instagram.com/your-profile"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 border-2 border-teal-500 text-teal-500 rounded-full hover:bg-teal-800 hover:text-white transition"
             >
               <FontAwesomeIcon icon={faInstagram} />
-            </a>
+            </a> */}
           </div>
         </div>
 
