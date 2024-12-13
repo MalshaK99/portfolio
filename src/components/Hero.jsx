@@ -14,8 +14,8 @@ const phrases = [
   "Software Engineer",
   "Tech Enthusiast",
 ];
-const typingSpeed = 150;
-const deletingSpeed = 100;
+const typingSpeed = 200;
+const deletingSpeed = 150;
 const pauseBetween = 1500;
 
 const Hero = () => {
