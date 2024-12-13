@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
-  faInstagram,
+  
 } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
@@ -16,7 +16,7 @@ const phrases = [
 ];
 const typingSpeed = 200;
 const deletingSpeed = 150;
-const pauseBetween = 1500;
+const pauseBetween = 500;
 
 const Hero = () => {
   const [currentPhrase, setCurrentPhrase] = useState("");

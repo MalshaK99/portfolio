@@ -20,7 +20,6 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import selenium from './tech/selenium.png'
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -37,6 +36,8 @@ import cookbookie from '../assets/CookBookie.png'
 import vestario from '../assets/vestarioo.png'
 import gearwise from '../assets/gearwise.png'
 import expense from '../assets/expense.png'
+import selenium from './tech/selenium.png'
+
 export {
   logo,
   backend,
@@ -75,5 +76,5 @@ export {
   cookbookie,
   vestario,
   gearwise,
-  expense
+  expense,
 };

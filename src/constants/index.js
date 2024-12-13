@@ -5,25 +5,15 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
-  meta,
   starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
   selenium,
   mysql,
   php,
@@ -32,7 +22,7 @@ import {
   cookbookie,
   vestario,
   gearwise,
-  expense
+  expense,
 } from "../assets";
 
 export const navLinks = [
@@ -106,8 +96,8 @@ const technologies = [
   },
   
   {
-    name: "docker",
-    icon: docker,
+    name: "selenium",
+    icon: selenium,
   },
   {
     name: "mysql",
@@ -123,7 +113,7 @@ const technologies = [
   },{
     name: "java",
     icon: java,
-  }
+  },
 ];
 
 const experiences = [
@@ -148,19 +138,17 @@ const experiences = [
       "Recognized with the Best Member Growth Award for October 2023, demonstrating effective member management and engagement strategies.",
     ],
   },
-  // {
-  //   title: "Web Developer",
-  //   company_name: "Shopify",
+   {
+     title: "Volunteer",
+     company_name: "IEEE UWU",
     
-  //   iconBg: "#383E56",
-  //   date: "Jan 2022 - Jan 2023",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
+     iconBg: "#383E56",
+     date: " 2022 -  2023",
+     points: [
+      " Volunteered as a Secretary Team Member for the Shecodress Hackathon organized by WIE UWU",
+       "Served as a Finance Team Member for Impetus 2024 organized by IEEE UWU"
+     ],
+   },
   // {
   //   title: "Full stack Developer",
   //   company_name: "Meta",
