@@ -142,7 +142,7 @@ const experiences = [
      title: "Volunteer",
      company_name: "IEEE UWU",
     
-     iconBg: "#383E56",
+     iconBg: "#134e4a",
      date: " 2022 -  2023",
      points: [
       " Volunteered as a Secretary Team Member for the Shecodress Hackathon organized by WIE UWU",
