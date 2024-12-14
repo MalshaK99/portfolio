@@ -11,7 +11,7 @@ import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
-import html from "./tech/html.webp";
+import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
@@ -29,9 +29,9 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import mysql from './tech/mysql.png'
-import php from './tech/php.jpeg'
-import python from './tech/python.jpeg'
-import java from './tech/java.jpeg'
+import php from './tech/php.png'
+import python from './tech/python.png'
+import java from './tech/java.png'
 import cookbookie from '../assets/CookBookie.png'
 import vestario from '../assets/vestarioo.png'
 import gearwise from '../assets/gearwise.png'
