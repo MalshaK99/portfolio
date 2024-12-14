@@ -14,9 +14,9 @@ const phrases = [
   "Software Engineer",
   "Tech Enthusiast",
 ];
-const typingSpeed = 200;
-const deletingSpeed = 150;
-const pauseBetween = 500;
+const typingSpeed = 20;
+const deletingSpeed = 15;
+const pauseBetween = 50;
 
 const Hero = () => {
   const [currentPhrase, setCurrentPhrase] = useState("");
