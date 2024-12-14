@@ -6,11 +6,6 @@ import { github, youtube } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 
-const fadeInVariant = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
-};
-
 const ProjectCard = ({
   index,
   name,
@@ -22,10 +17,10 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div
-      variants={fadeInVariant}
-      initial="hidden"
-      animate="visible"
-      transition={{ duration: 0.5, delay: index * 0.2 }}
+      whileHover={{ scale: 1.05 }} // Slight zoom-in effect on hover
+      initial={{ opacity: 0, y: 20 }} // Start slightly below with no opacity
+      animate={{ opacity: 1, y: 0 }} // Fade in and move to its final position
+      transition={{ duration: 0.5, delay: index * 0.2 }} // Smooth transition with delay per card
       className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
     >
       <div className="relative w-full h-[230px]">
@@ -82,37 +77,43 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <section id="work">
+      {/* Section Header */}
       <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={fadeInVariant}
+        initial={{ opacity: 0, y: 10 }} // Fade in from a small vertical offset
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <p className={`${styles.sectionSubText}`}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
-      <div className="w-full flex">
-        <motion.p
-          initial="hidden"
-          animate="visible"
-          variants={fadeInVariant}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
+      {/* Description */}
+      <motion.div
+        initial={{ opacity: 0, y: 10 }} // Subtle fade-in and movement
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="w-full flex"
+      >
+        <p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
           Following projects showcase my skills and experience through
           real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
-        </motion.p>
-      </div>
+          links to code repositories and live demos. It reflects my ability to
+          solve complex problems, work with different technologies, and manage
+          projects effectively.
+        </p>
+      </motion.div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      {/* Project Cards */}
+      <motion.div
+        className="mt-20 flex flex-wrap gap-7"
+        initial={{ opacity: 0 }} // Start with no opacity
+        animate={{ opacity: 1 }} // Gradually fade in the container
+        transition={{ duration: 0.5, delay: 0.3 }} // Delay slightly after description
+      >
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
