@@ -21,7 +21,7 @@ const ProjectCard = ({
       initial={{ opacity: 0, y: 20 }} // Start slightly below with no opacity
       animate={{ opacity: 1, y: 0 }} // Fade in and move to its final position
       transition={{ duration: 0.5, delay: index * 0.2 }} // Smooth transition with delay per card
-      className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+      className="bg-black-100 p-5 rounded-2xl sm:w-[360px] w-full"
     >
       <div className="relative w-full h-[230px]">
         <img
